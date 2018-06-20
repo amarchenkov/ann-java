@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true" name="XMLConfigTest">
+
+    <Appenders>
+        <Appender type="Console" name="STDOUT">
+            <Layout type="PatternLayout" pattern="%d %p %c{1.} [%t] %m%n"/>
+        </Appender>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
