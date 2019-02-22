@@ -4,6 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>ANN-Java</name>
+    <properties>
+        <log4j.version>2.11.2</log4j.version>
+        <lombok.version>1.18.0</lombok.version>
+    </properties>
 
     <groupId>root</groupId>
     <artifactId>ann</artifactId>
@@ -14,18 +18,18 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.0</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.11.0</version>
+            <version>${log4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.11.0</version>
+            <version>${log4j.version}</version>
         </dependency>
     </dependencies>
 
@@ -35,10 +39,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.0</version>
                 <configuration>
-                    <source>10</source>
-                    <target>10</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>
